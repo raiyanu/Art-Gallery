@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 10px;
+}
+
+nav {
+  max-height: 10vh;
+}
+
 body {
   min-height: 100vh;
   min-height: 100dvh;
@@ -28,6 +41,7 @@ body main > div:nth-child(2) {
   width: 100%;
 }
 body main .tab-content .tab-pane {
+  max-height: 90vh;
   overflow-y: scroll;
 }
 body main #HomeCarousel {

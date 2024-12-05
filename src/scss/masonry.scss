@@ -5,6 +5,7 @@
 	width: 100%;
 	flex-wrap: wrap;
 	gap: 15px;
+	overflow-y: scroll;
 	.card-wrapper {
 		display: flex;
 		align-items: center;
