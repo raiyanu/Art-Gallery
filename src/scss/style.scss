@@ -1,0 +1,54 @@
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	display: flex;
+	flex: {
+		direction: column;
+	}
+
+	main {
+		flex: {
+			grow: 1;
+			shrink: 0;
+			basis: 100%;
+		}
+		gap: 1rem;
+		height: auto;
+		display: flex;
+		& > div {
+			min-height: 100%;
+		}
+		& > div:nth-child(1) {
+			width: 20%;
+			flex: {
+				grow: 0;
+				shrink: 1;
+			}
+			padding: 2rem;
+			gap: 1rem;
+		}
+		& > div:nth-child(2) {
+			flex: {
+				grow: 0;
+				shrink: 1;
+			}
+			width: 100%;
+		}
+		.tab-content {
+			.tab-pane {
+				overflow-y: scroll;
+			}
+		}
+		#HomeCarousel {
+			max-height: 400px;
+			.carousel-inner {
+				max-height: 400px;
+				img {
+					max-height: 400px;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
