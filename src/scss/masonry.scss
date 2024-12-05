@@ -1,0 +1,27 @@
+.card-parent-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: stretch;
+	width: 100%;
+	flex-wrap: wrap;
+	gap: 15px;
+	.card-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 15px;
+		width: fit-content;
+
+		flex: {
+			grow: 1;
+			shrink: 0;
+		}
+		& > article {
+			flex: {
+				grow: 1;
+			}
+			min-width: 100%;
+		}
+	}
+}
