@@ -38,8 +38,14 @@ body {
 				grow: 0;
 				shrink: 1;
 			}
-			padding: 2rem;
+			padding: 1rem;
 			gap: 1rem;
+			@media (max-width: 720px) {
+				& {
+					z-index: 999;
+					background-color: whitesmoke;
+				}
+			}
 		}
 		& > div:nth-child(2) {
 			flex: {
